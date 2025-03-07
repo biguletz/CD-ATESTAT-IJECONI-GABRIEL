@@ -5,35 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BEDROOM FINDS.home</FINDS></title>
 <style>
-    body{
-        margin-left: 0;
-    }
 nav ul{
   list-style-type: none;
-  margin: 0;
   padding: 0;
-  background-color: #333;
+  margin-top: 0;
+  background-color:black;
   top: 0;
   position: fixed;
   width: 100%;
-  z-index: 2;
+  z-index: 100;
+  left: 0;
 }
 
 li {
   float: left;
   border-right:1px solid white;
 }
-
 li:last-child {
     border-right: none;
-    border-left:1px solid white;
+    border-left:3px solid white;
 }
 
 li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 16px 14px;
   text-decoration: none;
 }
 
@@ -45,21 +42,23 @@ li a:hover:not(.active) {
   background-color: rgb(199, 176, 44);
 }
 .logo{
-    width: 100px;
+    width: 80px;
     height: 80px;
-    float: left;
-    position: relative;
-    top: 40px;
     z-index: 1;
-    left: 10px;
 }
-
+.homeimg1{
+  display: flex;
+  z-index: 1;
+  margin-left: 0;
+  margin-right: 0;
+}
 
 </style>
 </head>
 <body>
 <nav>
 <ul>
+  <li><img class="logo" src="logo atestat.png" alt="logo"></li>
   <li><a class="active" href="home.html">ACASA</a></li>
   <li><a href="produse.html">PRODUSE</a></li>
   <li><a href="servicii.html">SERVICII</a></li>
@@ -70,11 +69,12 @@ li a:hover:not(.active) {
 </ul>
 </nav>
 <div>
-    <img class="logo" src="logo atestat.png" alt="logo">
+    
 </div>
 <div>
-<img class="homeimg1" src="tranforming-living-space-child-models-1400x750.jpg" alt="homeimg1">
-
+  <div class="homeimg1">
+    <img  src="tranforming-living-space-child-models-1400x750.jpg" alt="homeimg1">
+  </div>
 </div>
 </body>
 </html>
