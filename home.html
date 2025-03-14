@@ -5,32 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BEDROOM FINDS.home</FINDS></title>
 <style>
+  body::-webkit-scrollbar{
+    display: none;
+  }
+    body{
+        margin-left: 0;
+    }
 nav ul{
   list-style-type: none;
+  margin: 0;
   padding: 0;
-  margin-top: 0;
-  background-color:black;
+  background-color: #333;
   top: 0;
   position: fixed;
   width: 100%;
-  z-index: 100;
-  left: 0;
+  z-index: 2;
 }
 
 li {
   float: left;
   border-right:1px solid white;
 }
+
 li:last-child {
     border-right: none;
-    border-left:3px solid white;
+    border-left:1px solid white;
 }
 
 li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 16px 14px;
+  padding: 14px 16px;
   text-decoration: none;
 }
 
@@ -42,15 +48,17 @@ li a:hover:not(.active) {
   background-color: rgb(199, 176, 44);
 }
 .logo{
-    width: 80px;
+    width: 100px;
     height: 80px;
+    float: left;
+    top: 40px;
     z-index: 1;
+    left: 10px;
 }
 .homeimg1{
-  display: flex;
-  z-index: 1;
-  margin-left: 0;
-  margin-right: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
 }
 
 </style>
@@ -58,7 +66,6 @@ li a:hover:not(.active) {
 <body>
 <nav>
 <ul>
-  <li><img class="logo" src="logo atestat.png" alt="logo"></li>
   <li><a class="active" href="home.html">ACASA</a></li>
   <li><a href="produse.html">PRODUSE</a></li>
   <li><a href="servicii.html">SERVICII</a></li>
@@ -68,13 +75,8 @@ li a:hover:not(.active) {
   
 </ul>
 </nav>
-<div>
-    
-</div>
-<div>
-  <div class="homeimg1">
-    <img  src="tranforming-living-space-child-models-1400x750.jpg" alt="homeimg1">
-  </div>
-</div>
+  <img class="homeimg1" src="Modern-bedroom-ideas-1280x720.avif" alt="homeimg1">
+    <img class="logo" src="logo atestat.png" alt="logo">
+
 </body>
 </html>
