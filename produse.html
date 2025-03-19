@@ -5,57 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BEDROOM FINDS.produse</title>
 <style>
-    body{
-        margin-left: 0;
-    }
-nav ul{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background-color: #333;
-  top: 0;
-  position: fixed;
-  width: 100%;
-  z-index: 2;
-}
+  body::-webkit-scrollbar{
+    display: none;
+  }
+  body{
+    margin: 0; 
+  }
+  /*BODY*/
+  nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(-90deg, #c2be09, #171a02);
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+  }
 
-li {
-  float: left;
-  border-right:1px solid white;
-}
+  li {
+    float: left;
+    border-right:1px solid white;
+  }
 
-li:last-child {
+  li:last-child {
+      border-right: none;
+      border-left:1px solid white;
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 31px 22px;
+    text-decoration: none;
+  }
+
+  li a:hover:not(.active) {
+    background-color:rgb(232, 232, 137);
+  }
+
+  .active {
+    background-color: rgb(199, 176, 44);
+  }
+  .logo{
+      width: 100px;
+      height: 80px;
+      float: left;
+      z-index: 1;
+  }
+  .slogan{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:  rgb(199, 176, 44);
+    padding-right: 20px;
+    padding-left: 5px;
+    font-size: 15px;
+  }
+  .home{
     border-right: none;
     border-left:1px solid white;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover:not(.active) {
-  background-color:rgb(232, 232, 137);
-}
-
-.active {
-  background-color: rgb(199, 176, 44);
-}
+  }
+  /*NAVBAR*/
 </style>
 </head>
 <body>
-<nav>
-<ul>
-  <li><a href="home.html">ACASA</a></li>
-  <li><a href="produse.html" class="active" >PRODUSE</a></li>
-  <li><a href="servicii.html">SERVICII</a></li>
-  <li><a href="despre.html">DESPRE</a> </li>
-  <li><a href="map.html">LOCATII MAGAZINE</a></li>
-  <li style="float:right"><a href="contact.html">Contact</a></li>
-  
-</ul>
-</nav>
+  <nav>
+    <ul>
+      <img class="logo" src="images/logo atestat.png" >
+      <li><p class="slogan">Find your style</p>
+          <p class="slogan">Sleep with style</p></li>
+      <li><a class="home" href="home.html">HOME</a></li>
+      <li><a class="active"  href="produse.html">PRODUCTS</a></li>
+      <li><a href="servicii.html">SERVICES</a></li>
+      <li><a href="despre.html">ABOUT US</a></li>
+      <li><a href="map.html">FIND US</a></li>
+      <li style="float:right"><a href="contact.html">Contact</a></li>
+    </ul>
+    </nav>
 </html>
