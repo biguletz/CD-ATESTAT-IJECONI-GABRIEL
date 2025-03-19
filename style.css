@@ -14,7 +14,7 @@
         list-style-type: none;
         margin: 0;
         padding: 0;
-        background: linear-gradient(-90deg, #c2be09, #171a02);
+        background:linear-gradient(-90deg, #8a8a8a,rgb(70, 70, 70));
         top: 0;
         position: fixed;
         width: 100%;
@@ -25,12 +25,11 @@
         float: left;
         border-right:1px solid white;
     }
-
     nav li:last-child {
         border-right: none;
         border-left:1px solid white;
     }
-    li a {
+    nav li a {
         display: block;
         color: white;
         text-align: center;
@@ -52,13 +51,15 @@
         z-index: 1;
     }
     .slogan{
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        color:  rgb(199, 176, 44);
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+        color: #fff;
         padding-right: 20px;
         padding-left: 5px;
         font-size: 15px;
+        border-right: none;
+        bottom: 20px;
     }
-    .home{
+    #home{
         border-right: none;
         border-left:1px solid white;
     }
@@ -87,9 +88,9 @@
         font-size: 23px;
         font-weight: bold;
         padding: 10px 20px;
-        border-radius: 5px;
-        margin-left: 150px;
-        margin-right: 710px;
+        border-radius: 30px;
+        margin-left: 200px;
+        margin-right: 500px;
         margin-top: 60px;
         background-color: beige;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
@@ -100,12 +101,13 @@
         margin-left: 80px;
         font-size: 40px;
         font-weight: bold;
+        padding: top 50px;
     }
     .listaessential li{
         margin-left:100px ;
         font-size: 30px;
         font-weight: bolder;
-        margin-bottom: 30px;
+        color:darkgray;
     }
     .essentialdescr{
         font-style: italic;
@@ -117,6 +119,7 @@
     .essentialtypesul li{
         font-size: 20px;
         left: 40px;
+        color: black;
     }
     .containerlabel{
         display: flex;
@@ -133,7 +136,15 @@
         margin-left: 30px;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     } 
-    .label2 img{
+    .label2 img {
+        height: 500px;
+        width: 700px;
+        padding: 10px 15px;
+        border-radius: 50px;
+        margin-right: 20px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .label2 video {
         height: 500px;
         width: 700px;
         padding: 10px 15px;
