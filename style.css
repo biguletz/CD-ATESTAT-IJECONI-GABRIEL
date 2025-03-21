@@ -3,6 +3,7 @@
     }
     body{
         margin: 0; 
+        font-family:Arial, Helvetica, sans-serif ;
     }
     /*BODY DONE*/
 
@@ -19,15 +20,14 @@
         position: fixed;
         width: 100%;
         z-index: 2;
+        font-weight:600;
     }
 
     nav li {
         float: left;
-        border-right:1px solid white;
     }
     nav li:last-child {
         border-right: none;
-        border-left:1px solid white;
     }
     nav li a {
         display: block;
@@ -56,29 +56,45 @@
         padding-right: 20px;
         padding-left: 5px;
         font-size: 15px;
-        border-right: none;
-        bottom: 20px;
     }
-    #home{
-        border-right: none;
-        border-left:1px solid white;
+    .cos{
+        width: 10px;
+        scale: 4;
     }
     /*NAVBAR*/
 
 
 
     /*HOMEPAGE START*/
-    .homeimg1{
-        margin: 0;
-        width: 100%;
-        height: 85vh;
-        border-bottom-right-radius: 50px;
-        border-bottom-left-radius: 50px;
+    .header {
+        background: url("./images/pexels-medhat-ayad-122846-439227.jpg") no-repeat center center/cover        ;
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 44px;
+        font-weight: bold;
+        border-radius: 30px;
+    }
+    .button {
+        background: darkblue;
+        color: white;
+        padding: 12px 24px;
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+        border-radius: 30px;
+        transition: 0.3s;
+    }
+    .button:hover {
+        background: rgb(15, 2, 85)
     }
     h1{
         font-size: 50px;
         text-align: center;
         font-family:Arial, Helvetica, sans-serif ;
+        color: darkgreen;
     }
     h2{
         text-align: center;
@@ -89,11 +105,10 @@
         font-weight: bold;
         padding: 10px 20px;
         border-radius: 30px;
-        margin-left: 200px;
-        margin-right: 500px;
+        align-content: center;
         margin-top: 60px;
-        background-color: beige;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        margin-left: 150px;
+        margin-right: 150px;
     }
     .essential{
         font-family:Arial, Helvetica, sans-serif ;
@@ -106,7 +121,6 @@
     .listaessential li{
         margin-left:100px ;
         font-size: 30px;
-        font-weight: bolder;
         color:darkgray;
     }
     .essentialdescr{
@@ -122,26 +136,27 @@
         color: black;
     }
     .containerlabel{
+        height: 600px;
         display: flex;
         justify-content: center; 
         align-items: center;
         gap: 20px;
-        height: 600px;
     }
     .label1 {
         font-weight: bold;
         background-color:blanchedalmond;
         padding: 10px 20px;
         border-radius: 50px;
-        margin-left: 30px;
+        margin-left: 50px;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        height: 500px;
     } 
     .label2 img {
         height: 500px;
         width: 700px;
         padding: 10px 15px;
         border-radius: 50px;
-        margin-right: 20px;
+        margin-right: 50px;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     }
     .label2 video {
@@ -149,12 +164,54 @@
         width: 700px;
         padding: 10px 15px;
         border-radius: 50px;
-        margin-right: 20px;
+        margin-right: 50px;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     }
-  /*HOMEPAGE DONE*/
-
-
+    /*HOMEPAGE DONE*/
+    /*PRODUCTS PAGE START*/
+    .products-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 20px;
+      }
+      
+      .product-item {
+        background: #f4f4f4;
+        padding: 15px;
+        text-align: left;
+        border-radius: 10px;
+        text-decoration: none;
+        color: inherit;
+        display: block; 
+        transition: transform 0.2s ease-in-out;
+      }
+      
+      .product-item:hover {
+        transform: scale(1.05);
+      }
+      
+      .product-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+      
+      .product-item h3 {
+        margin: 10px 0;
+        font-size: 16px;
+      }
+      
+      .stars {
+        color: #4CAF50;
+        font-size: 20px;
+      }
+      
+      .price {
+        font-weight: bold;
+        color: #333;
+      }
+    /*PRODUCTS PAGE DONE*/
 
 
 
@@ -183,7 +240,7 @@
     .col-5 img:hover{
         filter: grayscale(0);
     }
-    .small-container{
+    .brands .small-container{
         max-width: 1080px;
         margin:auto;
         padding-left: 25px;
