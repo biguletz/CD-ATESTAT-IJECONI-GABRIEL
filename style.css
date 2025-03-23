@@ -28,6 +28,8 @@
     }
     nav li:last-child {
         border-right: none;
+        float: right;
+        padding-right: 30px;
     }
     nav li a {
         display: block;
@@ -53,6 +55,7 @@
     .slogan{
         font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
         color: #fff;
+        padding-top: 15.5px;
         padding-right: 20px;
         padding-left: 5px;
         font-size: 15px;
@@ -78,7 +81,7 @@
         border-radius: 30px;
     }
     .button {
-        background: darkblue;
+        background: rgb(0, 0, 0);
         color: white;
         padding: 12px 24px;
         font-size: 18px;
@@ -88,13 +91,13 @@
         transition: 0.3s;
     }
     .button:hover {
-        background: rgb(15, 2, 85)
+        background-color: #8a8a8a;
     }
     h1{
         font-size: 50px;
         text-align: center;
         font-family:Arial, Helvetica, sans-serif ;
-        color: darkgreen;
+        color: rgb(199, 176, 44);
     }
     h2{
         text-align: center;
@@ -122,6 +125,7 @@
         margin-left:100px ;
         font-size: 30px;
         color:darkgray;
+        font-weight: 700;
     }
     .essentialdescr{
         font-style: italic;
@@ -134,6 +138,7 @@
         font-size: 20px;
         left: 40px;
         color: black;
+        font-weight: 200;
     }
     .containerlabel{
         height: 600px;
@@ -203,7 +208,7 @@
       }
       
       .stars {
-        color: #4CAF50;
+        color: rgb(199, 176, 44);
         font-size: 20px;
       }
       
@@ -212,7 +217,99 @@
         color: #333;
       }
     /*PRODUCTS PAGE DONE*/
-
+    /* SINGLE PPRODUCT PAGE START*/
+    .product-page {
+        display: flex;
+        gap: 30px;
+        padding-left: 100px;
+        padding-top: 130px;
+        align-items: flex-start;
+      }
+      
+    .product-gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+      
+    #mainImage {
+        width: 450px;
+        border-radius: 10px;
+        border: 1px solid #ddd;
+        padding: 10px;
+        background-color: #fff;
+    }
+      
+    .thumbnails {
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+    }
+      
+    .thumbnails img {
+        width: 75px;
+        height: 75px;
+        cursor: pointer;
+        border-radius: 5px;
+        border: 2px solid transparent;
+        transition: border 0.3s;
+    }
+      
+    .thumbnails img:hover {
+        border: 2px solid rgb(199, 176, 44);
+    }
+      
+    .product-info {
+        max-width: 500px;
+    }
+      
+    .prodtitle{
+        font-size: 24px;
+        color: #000;
+    }
+    .proddescr {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+      
+    .addtocart {
+        background-color:rgb(199, 176, 44);
+        color: white;
+        padding: 12px 20px;
+        font-size: 18px;
+        font-weight: bold;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-top: 15px;
+        width: 100%;
+        max-width: 250px;
+        transition: 0.3s ease-in-out;
+    }
+      
+    .addtocart:hover {
+        background-color:rgb(232, 232, 137);
+    }
+    .product-info input{
+        width: 50px;
+        height: 40px;
+        padding-left: 10px;
+        font-size: 20px;
+        margin-right: 10px;
+        border: 1px solid rgb(199, 176, 44);
+        border-radius: 8px;
+    }
+    input:focus{
+        outline-color:rgb(199, 176, 44) ;
+    }
+    .product-info select{
+        display: block;
+        padding: 10px;
+        margin-top: 20px;
+        border-color:rgb(199, 176, 44) ;
+        border-radius: 8px;
+    }
+    /*SINGLE PRODUCT PAGE DONE*/
 
 
   /*FOOTER START*/
