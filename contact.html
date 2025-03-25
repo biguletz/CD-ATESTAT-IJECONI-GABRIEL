@@ -4,82 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BEDROOM FINDS.contact</title>
-<style>
-  body::-webkit-scrollbar{
-    display: none;
-  }
-  body{
-    margin: 0; 
-  }
-  /*BODY*/
-  nav ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(-90deg, #c2be09, #171a02);
-    top: 0;
-    position: fixed;
-    width: 100%;
-    z-index: 2;
-  }
-
-  li {
-    float: left;
-    border-right:1px solid white;
-  }
-
-  li:last-child {
-      border-right: none;
-      border-left:1px solid white;
-  }
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 31px 22px;
-    text-decoration: none;
-  }
-
-  li a:hover:not(.active) {
-    background-color:rgb(232, 232, 137);
-  }
-
-  .active {
-    background-color: rgb(199, 176, 44);
-  }
-  .logo{
-      width: 100px;
-      height: 80px;
-      float: left;
-      z-index: 1;
-  }
-  .slogan{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color:  rgb(199, 176, 44);
-    padding-right: 20px;
-    padding-left: 5px;
-    font-size: 15px;
-  }
-  .home{
-    border-right: none;
-    border-left:1px solid white;
-  }
-    /*NAVBAR*/
-</style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <nav>
-      <ul>
-        <img class="logo" src="images/logo atestat.png" >
-        <li><p class="slogan">Find your style</p>
-            <p class="slogan">Sleep with style</p></li>
-        <li><a class="home" href="home.html">HOME</a></li>
-        <li><a href="produse.html">PRODUCTS</a></li>
-        <li><a href="servicii.html">SERVICES</a></li>
-        <li><a href="despre.html">ABOUT US</a> </li>
-        <li><a href="map.html">FIND US</a></li>
-        <li style="float:right"><a class="active" href="contact.html">Contact</a></li>
-      </ul>
+    <ul>
+      <img class="logo" src="images/logo atestat.png" >
+      <li><p class="slogan">Sleep with style</p></li>
+      <li><a id="home" href="home.html">HOME</a></li>
+      <li><a href="produse.html">PRODUCTS</a></li>
+      <li><a href="servicii.html">SERVICES</a></li>
+      <li><a href="despre.html">ABOUT US</a> </li>
+      <li><a class="active" href="contact.html">CONTACT US</a></li>
+      <li><a href="cos.html"><img class="cos" src="images/cos.webp"></a></li>
+    </ul>
     </nav>
+    <!---Navbar----> 
+    <div class="contactuscontainer">
+      <header>
+        <p class="contactustitile">Contact Us</p>
+        <p class="contactussubtitle">If you have any questions or need more information, feel free to reach out to us!</p>
+      </header>
+  
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d764.7993952904399!2d21.230092498186238!3d45.765444704519275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47456770aace7385%3A0x65abf90b4346b98c!2sThe%20Access%20Group!5e0!3m2!1sro!2sro!4v1742858085948!5m2!1sro!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form action="#" method="POST">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email address">
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required placeholder="Enter the subject of your message">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required placeholder="Write your message here"></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit">Submit Message</button>
+          </div>
+        </form>
+      </div>
+    </div> 
+
+
+
+    <div class="brands">
+      <div class="small-container">
+          <div class="row">
+              <div class="col-5">
+                  <img src="images/logo amazon.webp">
+              </div>
+              <div class="col-5">
+                  <img src="images/logo paypal.png">
+              </div>
+              <div class="col-5">
+                  <img src="images/logo samsung.png">
+              </div>
+              <div class="col-5">
+                  <img src="images/logo volkswagen.png">
+              </div>
+              <div class="col-5">
+                  <img src="images/logo ikea.png">
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="footer">
+      <div class="container2">
+          <div class="row">
+              <div class="footer-col-1">
+                  <h3>Download App</h3>
+                  <p>Download App on mobile phone Android and Ios. </p>
+                  <div class="app-logo">
+                      <img src="images/logo google play.png">
+                      <img src="images/logo app store.png">
+                  </div>
+              </div>
+              <div class="footer-col-2">
+                  <img src="images/logo atestat.png">
+                  <p>
+                      Our purpose is to make people smile. We assure you will find your style.
+                  </p>
+              </div>
+              <div class="footer-col-3">
+                  <h3>Useful links</h3>
+                  <ul>
+                      <li>Cupopons</li>
+                      <li>Blog</li>
+                      <li>The best for the best</li>
+                      <li>Join Affiliate</li>
+                  </ul>
+              </div>
+              <div class="footer-col-4">
+                  <h3>Follow us</h3>
+                  <ul>
+                     <li>Facebook</li>
+                     <li>Twitter</li>
+                     <li>Instagram</li>
+                     <li>You Tube</li>
+                  </ul>
+              </div>
+          </div>
+          <hr>
+          <p> <div class="copyright">&copy; 2025 Bedroom Finds. All types for your bedroom</div></p>
+      </div>
+  </div>
 </body>
 </html>
