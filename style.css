@@ -185,7 +185,7 @@
       }
       
       .product-item {
-        background: #f4f4f4;
+        background: #8a8a8a;
         padding: 15px;
         text-align: left;
         border-radius: 10px;
@@ -240,7 +240,7 @@
         border-radius: 10px;
         border: 1px solid #ddd;
         padding: 10px;
-        background-color: #fff;
+        background-color: #8a8a8a;
     }
       
     .thumbnails {
@@ -331,7 +331,7 @@
     }
     .labelservices{
         font-weight: bold;
-        background-color:#f4f4f4;
+        background-color:#bebebea6;
         padding: 15px 20px;
         border-radius: 20px;
         margin-left: 100px;
@@ -350,12 +350,31 @@
     }
     /*SERVICES DONE*/
     /*ABOUT US START*/
-    .aboutuscontainerlabel{
+    .aboutusimg1{
+        width: 700px;
+        margin-right:100px;
+        border-radius: 30px;
+        height: 500px;
+    }
+    .aboutusimg2{
+        width: 700px;
+        border-radius: 30px;
+        height: 500px;
+    }
+    .aboutuscontainerlabel1{
         margin-left: 100px;
-        margin-right: 100px;
         display: flex;
         text-align: justify;
         text-indent: 60px;
+        margin-top: 60px;
+    }
+    .aboutuscontainerlabel2{
+        display: flex;
+        text-align: justify;
+        text-indent: 60px;
+        gap: 60px;
+        margin-right: 100px;
+        margin-top: 60px;
     }
     .labelaboutustitle{
         font-size: 40px;
@@ -366,7 +385,6 @@
         font-weight: bold;
     }
     .aboutusdescr{
-        font-style: italic;
         font-size: 23px;
     }
     .aboutusdescr li{
@@ -427,7 +445,7 @@
         margin-top: 40px;
         padding: 20px;
         border-radius: 10px;
-        background-color: #f9f9f9;
+        background-color: #bebebea6;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       }
       .contact-form h2 {
@@ -474,6 +492,29 @@
         transform: translateY(-3px);
       }
     /*CONTACT US DONE*/
+    /*CART START*/
+    .containerlabelcart{
+        max-width: 1300px;
+        margin: 40px auto;
+        padding: 30px;
+        background-color: #fff;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        overflow: hidden;
+        margin-top: 50px;
+    }
+    .cart-item{
+        font-size: 30px;
+    }
+    #cart-total{
+        font-size: 30px;
+        float: right;    
+    }
+    .imagcart{
+        width: 200px;
+        height: 200px;
+    }
+    /*CART DONE*/
   /*FOOTER START*/
     *{
         padding: 0;
