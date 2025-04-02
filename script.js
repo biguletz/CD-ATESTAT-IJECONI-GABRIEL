@@ -10,7 +10,7 @@ function addToCart(product) {
     }
   
     localStorage.setItem("cart", JSON.stringify(cart)); // Salvăm în localStorage
-    alert("Produsul a fost adăugat în coș!"); // Afișăm un mesaj
+    alert("The product has been succesfully added to your cart!"); // Afișăm un mesaj
     renderCart(); // Reafișăm coșul
   }
   
