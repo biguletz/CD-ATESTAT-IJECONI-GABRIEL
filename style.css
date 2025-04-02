@@ -515,7 +515,22 @@
         height: 200px;
     }
     /*CART DONE*/
-  /*FOOTER START*/
+    /* paypal START*/
+    .plata
+    {
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        width: 100%;
+        height: min-content;
+        
+    }
+    .plata div{
+        z-index: -10;
+        width: 50%;
+    }
+    /* paypal DONE*/
+    /*FOOTER START*/
     *{
         padding: 0;
         box-sizing: border-box;
